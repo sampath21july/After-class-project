@@ -1,0 +1,50 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #0d0d0d;
+    color:#CCCCCC;
+}
+h1{
+    color:aquamarine;
+}
+/* Attribute Selector */
+a{
+    color: #8b9496;
+}
+a:hover{
+    color:#1F6FEB
+}
+/*Child Selector*/
+ul > li {
+    font-weight:Italic;
+}
+/*Sibling Selector */
+h1 + p{
+    background-color: 161B22;
+    padding:10px;
+    border-radius:5px;
+}
+/* :hover Pseudo-class*/
+ul li:hover{
+    color:#4F8CC9;
+}
+/* :nth-child() Pseudo-class */
+ul li:nth-child(3){
+    background-color: #21262D;
+}
+/* :not(selector)Pseudo-class */
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/* ::before Pseudo element*/
+ul li::before{
+    content:"🥰";
+}
+/*::after Pseudo element*/
+a::after{
+    content:"🤩";
+}
+/*:: first letter Pseudo-element */
+p::first-letter{
+    font-size:200%;
+    color:#FF7B72;
+}
