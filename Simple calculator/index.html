@@ -3,17 +3,57 @@
     <body>
         <h1>Addition</h1>
         <p>Sum of two Numbers</p>
-        <p>Numbers are:-10 and 9</p>
+        <p>Numbers are:10 and 9</p>
         <p id="result"></p>
         <script>
             var num1 = 10;
             var num2 = 9;
             var sum = num1 + num2;
-            document.getElementById("result").innerHTML ="The total sum is;" + sum;
+            document.getElementById("result").innerHTML ="The total sum is " + sum;
+        </script><hr>
+        <h1>Subtraction</h1>
+        <p>Difference between two numbers</p>
+        <p>Numbers are: 9 and 5 </p>
+        <p id="myid"></p>
+        <script>
+            var num1 = 9;
+            var num2 = 5;
+            var subtraction = num1 - num2;
+            document.getElementById("myid").innerHTML ="The difference is " + subtraction;
+        </script><hr>
+        <h1>Multiplication</h1>
+        <p>Product of two numbers</p>
+        <p>Numbers are: 134 and 45</p>
+        <p id="multi"></p>
+        <script>
+            var num1 = 134;
+            var num2 = 45;
+            var multiplication = num1 * num2;
+            document.getElementById("multi").innerHTML ="The product is " + multiplication;
+        </script><hr>
+        <h1>Division</h1>
+        <p>Dividing numbers into equal parts</p>
+        <p>Numbers are: 257 and 74</p>
+        <p id="div"></p>
+        <script>
+            var num1 = 74;
+            var num2 = 2;
+            var division = num1 / num2;
+            document.getElementById("div").innerHTML = "The quotient is " + division;
+        </script><hr>
+        <h1>Remainder</h1>
+        <p>A remainder is what remains after dividing</p>
+        <p>Numbers are: 267 and 67</p>
+        <p id ="rem"></p>
+        <script>
+            var num1 = 267;
+            var num2 = 67;
+            var remainder = num1 % num2;
+            document.getElementById("rem").innerHTML = "The remainder is " + remainder;
         </script>
     </body>
     <body>
-        <h1>Use of operator</h1>
+        <h2>Use of operator</h2>
         <p>We use the operator + with an example.</p>
         <p id="operator"></p>
         <script>
@@ -21,6 +61,6 @@
             var n = 11;
             var s = p + n;
             document.getElementById("operator").innerHTML = s;
-        </script>
+        </script><hr>
     </body>
 </html>
