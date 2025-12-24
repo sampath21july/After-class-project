@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Error with the help of try and catch.</h2>
+        <p>This project demonstrates goe to use catch and try  to dispaly an error.</p>
+        <p id="error_messages"></p>
+        <script>
+            try{
+                andanm("Hello everyone!");
+            }
+            catch(err){
+                document.getElementById("error_messages").innerHTML=err.messages;
+            }
+      </script>
+    </body>
+</html>
