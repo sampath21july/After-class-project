@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>In this project I will map the array and then convert into ascending order and descending order.</p>
+        <p id = product_value></p>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="descending()">Descending order</button>
+        <script>
+            var numbers =[11,19,25,3,27];
+            function myfunction(num){
+                return num * 5;
+            }
+            var newarray = numbers.map(myfunction);
+            document.getElementById("product_value").innerHTML=newarray;
+             var points = [55,95,125,15,135];
+                document.getElementById("result").innerHTML = points;
+                function ascending() {
+                    points.sort(function (a, b) { return a - b });
+                    document.getElementById("result").innerHTML = points;
+                }
+                function descending() {
+                    points.sort(function (a, b) { return b - a });
+                    document.getElementById("result").innerHTML = points;
+                }
+        </script>
+        <p id ="result"></p>
+        
+    </body>
+</html>
